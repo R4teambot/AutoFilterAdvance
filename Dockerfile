@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /https://github.com/R4teambot/AutoFilterAdvance/tree/TECH_VJ
-WORKDIR /https://github.com/R4teambot/AutoFilterAdvance/tree/TECH_VJ
+RUN mkdir /AutoFilterAdvance
+WORKDIR /AutoFilterAdvance
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
